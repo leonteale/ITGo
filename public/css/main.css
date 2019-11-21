@@ -6,25 +6,65 @@ blue dark: #1b2447
 green: #1fdb03
 */
 
-
 * {
 	 box-sizing: border-box;
 }
 
 body {
+  font-family: 'Roboto', sans-serif;
 	 background: #ebe9e7;
-
 }
 
 #sideMenu {
-	 background: #777;
-	 max-width: 280px;
+	 background: #1b2447;
+   width: 150px;
+   position: absolute;
+   top: 0;
+   bottom: 0;
 }
 
-#sideMenu nav a {
-	 display: block;
-}
+  nav {
+    padding-top: 70px;
+  }
 
-#sideMenu nav a.active {
-	 background: #999;
-}
+    a {
+    	 display: block;
+       color: lightgrey;
+       text-decoration: none;
+       padding: 15px 30px;
+       font-weight: 300;
+       transition: all 0.3s ease-in-out;
+     }
+
+     a:active {
+       background: purple;
+       border-left: 5px solid green;
+       padding: 15px 30px 15px 25px;
+       color: yellow;
+       content: "----";
+     }
+
+    a:hover {
+      background: purple;
+      border-left: 5px solid green;
+      padding: 15px 30px 15px 25px;
+      color: yellow;
+    }
+
+     .fa {
+       color: darkgrey;
+       font-size: 1.4rem;
+       margin-right: .8rem;
+       display: inline-block;
+       width: 20px;
+       position: relative;
+       top: 2px;
+     }
+/*
+     .fa:active, .fa:hover {
+       color: yellow;
+     } */
+
+     a:hover > .fa {
+       color: yellow;
+     }
