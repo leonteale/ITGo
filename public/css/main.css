@@ -1,0 +1,30 @@
+/* Colour variables
+
+grey light: #ebe9e7
+grey dark: #595756
+blue dark: #1b2447
+green: #1fdb03
+*/
+
+
+* {
+	 box-sizing: border-box;
+}
+
+body {
+	 background: #ebe9e7;
+
+}
+
+#sideMenu {
+	 background: #777;
+	 max-width: 280px;
+}
+
+#sideMenu nav a {
+	 display: block;
+}
+
+#sideMenu nav a.active {
+	 background: #999;
+}
